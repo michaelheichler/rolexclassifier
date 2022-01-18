@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#B9181818"
+
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/cvDialog"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/dialog_header"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorDarkText">
+
+                <TextView
+                    android:id="@+id/dialog_title"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+                    android:text="Choice Dialogue"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_back" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_tasks"
+
+                    />
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                >
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rlGallery"
+                    >
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="40dp"
+
+                        app:cardElevation="2dp"
+                        android:id="@+id/cvItem"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+
+                                android:layout_centerInParent="true"
+                                android:text="From Gallery" />
+
+
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rlCammera"
+                    >
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_margin="8dp"
+                        app:cardCornerRadius="40dp"
+
+                        app:cardElevation="2dp"
+
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+
+                                android:layout_centerInParent="true"
+                                android:text="Open Camera" />
+
+
+
+                        </RelativeLayout>
+
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</RelativeLayout>
+
+
+
